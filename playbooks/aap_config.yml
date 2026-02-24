@@ -4,6 +4,13 @@
   vars_files:
     - ../vaults/{{ env }}.yml
   connection: local
+
+  pre_tasks:
+    - name: Call license role
+      ansible.builtin.include_role:
+        name: infra.controller_configuration.license
+      when: controller_license is defined
+
   tasks:
     - name: Call dispatch role
       ansible.builtin.include_role:

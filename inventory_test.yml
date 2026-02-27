@@ -8,7 +8,7 @@ all:
         connection: local
     automationcontroller:
       hosts:
-        test-aap-aap.apps.cluster-r2fmp.r2fmp.sandbox497.opentlc.com: # FQDN of Automation Controller host(s)
+        test-aap-controller-aap.apps.cluster-r2fmp.r2fmp.sandbox497.opentlc.com: # FQDN of Automation Controller host(s)
 
     automationhub:
       hosts:
@@ -24,7 +24,7 @@ all:
 
     automationgateway:
       hosts:
-        #HERE: # FQDN of automation gateway if you have one. Otherwise, can be commented out if not in use.
+        test-aap-aap.apps.cluster-r2fmp.r2fmp.sandbox497.opentlc.com: # FQDN of automation gateway if you have one. Otherwise, can be commented out if not in use.
 
     # Only needed if installing AAP with automation, can be removed if you are not. See Install docs if unsure what server should be the database host.
     database:
